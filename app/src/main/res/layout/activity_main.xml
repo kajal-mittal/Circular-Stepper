@@ -21,14 +21,14 @@
         android:gravity="center"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/btn_earn"
+            android:id="@+id/btn_add"
             android:layout_width="wrap_content"
-            android:text="@string/earn"
+            android:text="@string/add"
             android:layout_height="wrap_content" />
         <Button
-            android:id="@+id/btn_redeem"
+            android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
-            android:text="@string/redeem"
+            android:text="@string/reset"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

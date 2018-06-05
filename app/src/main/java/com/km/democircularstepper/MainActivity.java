@@ -7,8 +7,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mBtnEarn;
-    private Button mBtnReddem;
+    private Button mBtnAdd;
+    private Button mBtnReset;
     private CustomView mCustomView;
 
     @Override
@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void init() {
-        mBtnEarn.setOnClickListener(this);
-        mBtnReddem.setOnClickListener(this);
+        mBtnAdd.setOnClickListener(this);
+        mBtnReset.setOnClickListener(this);
     }
 
     private void bindViews() {
-        mBtnEarn= (Button) findViewById(R.id.btn_earn);
-        mBtnReddem= (Button) findViewById(R.id.btn_redeem);
+        mBtnAdd= (Button) findViewById(R.id.btn_add);
+        mBtnReset= (Button) findViewById(R.id.btn_reset);
         mCustomView= (CustomView) findViewById(R.id.custom_view);
     }
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_earn:
                 mCustomView.incrementStep();
                 break;
-            case R.id.btn_redeem:
+            case R.id.btn_reset:
                 mCustomView.reset();
                 break;
         }
