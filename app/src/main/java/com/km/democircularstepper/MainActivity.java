@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId())
         {
-            case R.id.btn_earn:
+            case R.id.btn_add:
                 mCustomView.incrementStep();
                 break;
             case R.id.btn_reset:
